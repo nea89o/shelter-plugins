@@ -3,6 +3,10 @@ name: Build and deploy
 on:
     push:
         branches: [main]
+permissions:
+  pages: write
+  contents: write
+
 
 jobs:
     deploy:
