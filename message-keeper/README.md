@@ -1,5 +1,5 @@
 # Message Keeper Arounder
-> **Note:** You are on a plugin page, probably by clicking one of the plugin links. You need to copy the link address and paste it into the shelter settings.\n
+> **Note:** You are on a plugin page, probably by clicking one of the plugin links. You need to copy the link address and paste it into the shelter settings.
 
 Install url: `https://nea89o.github.io/shelter-plugins/message-keeper`
 
