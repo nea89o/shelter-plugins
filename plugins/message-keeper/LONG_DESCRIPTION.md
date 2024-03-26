@@ -1,0 +1,1 @@
+When a message gets deleted, this will keep it around for a while, highlighting it in slight red.
