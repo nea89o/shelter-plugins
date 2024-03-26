@@ -16,6 +16,7 @@
       devShells.default = pkgs.mkShell {
         shellHook = ''
           alias dev="pnpx @uwu/lune dev"
+          alias ci="pnpm exec lune ci"
         '';
         buildInputs = [
           pkgs.nodejs
