@@ -1,5 +1,8 @@
 # Linnea Gräf's shelter plugins
+## Message Keeper Arounder
 
-## Message Keeper
+Install url: `https://nea89o.github.io/shelter-plugins/message-keeper`
 
-Keeps messages around after they are deleted for a bit. Doesn't log them to a file or anyhting.
+Does not log messages, just keeps them around for a bit.
+
+[Read more](./message-keeper/)
