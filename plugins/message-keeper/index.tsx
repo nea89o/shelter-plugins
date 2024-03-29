@@ -29,6 +29,7 @@ function block(payload: AnyDispatchPayload) {
 
 function paintRed(channelId: string, messageId: string) {
 	let dom = document.getElementById(`chat-messages-${channelId}-${messageId}`)
+	if (!dom) return
 	dom.classList.add("nea-deleted-message")
 }
 
