@@ -76,6 +76,8 @@
   }
   function paintRed(channelId, messageId) {
     let dom = document.getElementById(`chat-messages-${channelId}-${messageId}`);
+    if (!dom)
+      return;
     dom.classList.add("nea-deleted-message");
   }
   function onReRenderEvent(payload) {
