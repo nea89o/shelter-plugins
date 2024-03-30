@@ -60,6 +60,8 @@
     if (payload.type !== "MESSAGE_DELETE")
       return;
     let messageStore = getMessageStore();
+    if (!messageStore)
+      return;
     let storedMessage = messageStore.getMessage(payload.channelId, payload.id);
     if (!storedMessage)
       return;
@@ -83,7 +85,9 @@
   function onReRenderEvent(payload) {
     if (payload.type === "CHANNEL_SELECT" || payload.type === "UPDATE_CHANNEL_DIMENSIONS") {
       let channel = payload.channelId;
-      let messages = getMessageStore().getMessages(channel);
+      let messages = getMessageStore()?.getMessages(channel);
+      if (!messages)
+        return;
       for (const message of messages._array) {
         if (message.editedTimestamp?.toISOString() === oldTimeStamp)
           paintRed(message.channel_id, message.id);
