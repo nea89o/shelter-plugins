@@ -55,7 +55,7 @@
     for (const trigger of messageReRenderTriggers)
       flux.dispatcher.subscribe(trigger, onReRenderEvent);
   }
-  var oldTimeStamp = "2001-01-01T00:00:00.069Z";
+  var oldTimeStamp = "2001-09-11T12:46:30.000Z";
   function block(payload) {
     if (payload.type !== "MESSAGE_DELETE")
       return;
