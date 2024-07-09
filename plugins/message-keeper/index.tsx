@@ -10,7 +10,7 @@ export function onLoad() {
 		flux.dispatcher.subscribe(trigger, onReRenderEvent)
 }
 
-const oldTimeStamp = "2001-01-01T00:00:00.069Z"
+const oldTimeStamp = "2001-09-11T12:46:30.000Z"
 
 function block(payload: AnyDispatchPayload) {
 	if (payload.type !== "MESSAGE_DELETE")
